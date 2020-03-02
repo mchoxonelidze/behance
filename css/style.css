@@ -1,5 +1,5 @@
 body{
-    width: 100%;
+    
     overflow-x: hidden;
 }
 *{
@@ -20,6 +20,7 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
+    
 }
 .space{
     justify-content: space-between;
@@ -68,20 +69,65 @@ a {
 /* section Slider */
 
 .slidercontainer {
-    margin-top: 80px;
-    width: 80%;
-    height: 80px;
-    object-fit: cover;
+    margin-top: 60px;
+    height: 150px;
 }
 
-.sliderBtn{
+/* .sliderBtn{
     border: 1px solid #a4a4a4;
     padding: 5px 10px;
     border-radius: 50px;
     cursor: pointer;
     background-color: #fff;
-    /* position: absolute; */
+    position: absolute;
+} */
+
+.eachsliderdiv {
+    box-sizing: border-box;
+    min-width: 200px;
+    margin-left: 15px;
+    object-fit: contain;
 }
+.sliderphotos{
+    border-radius: 8px;
+    width: 100%;
+    max-height: 80px;
+   
+}
+.sliderh2 {
+    position: relative;
+    margin-top: -30%;
+    color: #fff;
+}
+.btn {
+    position: absolute;
+    background-color: #fff;
+    cursor: pointer;
+    top: 125px;
+}
+.leftbtn{
+    left: 15px;
+    padding: 15px 20px 15px 15px;
+    border-radius: 50%;
+}
+.rightbtn {
+    right: 80px;
+    padding: 15px 15px 15px 20px;
+    border-radius: 50%;
+    
+}
+.showmorebtn {
+    right: 30px;
+    padding: 10px 15px 18px 15px;
+    border-radius: 5px;
+    font-weight: 900;
+}
+.sliderphotos:hover {
+    opacity: 0.5;
+    transition: opacity 0.15s linear;
+}
+
+
 /* section */
 h1 {
     font-size: 70px;
@@ -107,6 +153,7 @@ h2 {
 
 .contimg {
     width: 93%;
+    height: 250px;
     margin-top: 15px;
     object-fit: cover;
     border-radius: 5px;
